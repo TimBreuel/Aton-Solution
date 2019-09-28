@@ -1,0 +1,440 @@
+/* ===== GENERALS ===== */
+
+/*  COLOR: 
+    blue: #1D4973
+    orange: #EA9000
+    light-grey: #FAFAFA
+    light-grey: #F5F5F5
+*/
+
+@font-face {font-family: 'Cairo-Regular';
+    src:url('../font/Cairo-Regular.ttf');
+}
+
+@font-face {font-family: 'Cairo-Bold';
+    src:url('../font/Cairo-Bold.ttf');
+}
+
+@font-face {font-family: 'Cairo-Light';
+    src:url('../font/Cairo-Light.ttf');
+}
+
+
+/* ===== END GENERALS ===== */
+
+/* ===== GRID-SYSTEM ===== */
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.clearFix {
+    clear: both;
+}
+  
+.col-1  { width: 8.33%;}
+.col-2  { width: 16.66%;}
+.col-3  { width: 24.99%;}
+.col-4  { width: 33.33%;}
+.col-5  { width: 41.66%;}
+.col-6  { width: 50%;   }
+.col-7  { width: 58.32%;}
+.col-8  { width: 66.65%;}
+.col-9  { width: 74.997%;}
+.col-10 { width: 83.31%;}
+.col-11 { width: 91.63;}
+.col-12 { width: 100%;}
+
+[class*='col'] {
+    float: left;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="col"] {
+        width: 100%;
+    }
+}
+
+/* ===== END GRID-SYSTEM ===== */
+
+/* ===== HTML ELEMENTS ===== */
+
+body {
+    margin: 0;
+    font-family: 'Cairo-Regular', sans-serif;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cairo-Bold', sans-serif;
+}
+
+/* ===== END HTML ELEMENTS ===== */
+
+/* ===== LINK STYLES ===== */
+
+a:link {
+    color: #EA9000;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+a:visited {
+    color: #EA9000;
+}
+
+a:hover {
+    color: #FFFF;
+}
+
+a:active {
+    color: #FFFF;
+}
+
+
+/* ===== END LINK STYLES ===== */
+
+/* ===== NAVIGATION ===== */
+
+.top-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    list-style-type: none;
+    margin: -10px -10px 0 -10px;
+    padding: 0 0;
+    background-color: #1D4973;
+    box-shadow: 0 2px 5px black;
+    text-align: center;
+}
+
+.top-nav li {
+    display: inline;
+    
+}
+
+.top-nav li a {
+    padding: 17px 20px 10px 20px;
+    display: inline-block;
+    font-size: 17px;
+    transition: 1s;
+}
+
+
+a:hover {
+    color: #ffff;
+    background-color: rgba(234, 144, 0, 1);
+}
+
+.top-nav li a:active {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* ===== END NAVIGATION ===== */
+
+/* ===== HEADER-BACKGROUND ===== */
+
+.header-background {
+    width: 100%;
+    height: 680px;
+    background-image: url(../img/background-no-shadow.jpg);
+    background-position: top center;
+    background-size: cover;
+    margin: 0;
+    padding-top: 150px;
+    box-shadow: 0 2px 5px black;
+}
+
+.logo-background {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 10%;
+    
+}
+
+.logo-div {
+    width: 250px;
+    height: 200px;
+    background-image: url(../img/logo/logo_atom_solution.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0 auto 0 auto;
+}
+
+
+.logo-button {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.button-1 {
+    width: 100%;
+    height: 40px;
+    background-color: #1D4973;
+    color: #EA9000;
+    border-radius: 10px;
+    font-family: Cairo-Regular;
+    margin: 0 auto;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.button-1:hover {
+    color: #1D4973;
+    background-color: #EA9000;
+}
+
+/* ===== END HEADER-BACKGROUND ===== */
+
+/* ===== SERVICE ===== */
+
+.service-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #1D4973;
+}
+
+.service-box {
+    width: 65%;
+    background-color: #FFFF;
+    margin: auto; 
+    padding: 15px 0 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.service-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #EA9000;
+    margin: 15px auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    color: #1D4973;
+    font-size: 60px;
+    box-shadow: 0 0 5px 1px;
+}
+
+.service-icon > i {
+    line-height: 120px;
+}
+
+/* ===== ICON-ANIMATION ====== */
+
+.service-icon:hover {
+    animation: iconAnimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes iconAnimation {
+    0% { transform: rotateZ(0deg);}
+    11.111% { transform: rotateZ(0deg);}
+    22.222% { transform: rotateZ(90deg);}
+    33.333% { transform: rotateZ(90deg);}
+    44.444% { transform: rotateZ(180deg);}
+    55.555% { transform: rotateZ(180deg);}
+    66.666% { transform: rotateZ(270deg);}
+    77.777% { transform: rotateZ(270deg);}
+    88.888% { transform: rotateZ(360deg);}
+    100%    { transform: rotateZ(360deg);}
+}
+
+/* ===== END ICON-ANIMATION ===== */
+
+/* ===== SERVICE-CONTENT ===== */
+.service-h1 {
+    text-align: center;
+    margin: 0;
+    color: #FFFF;
+    font-size: 45px;
+}
+
+.service-h2 {
+    color: #1D4973;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.service-p {
+    color: #FFFF;
+    text-align: center;
+    margin: 0 auto 25px auto;
+    padding: 0 10%;
+}
+
+.service-bullet-points {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    color: #1D4973;
+    font-size: 18px;
+    font-family: Cairo-Regular;
+    line-height: 30px;
+    margin-top: 0;
+
+}
+
+/* ===== END SERVICE ===== */
+
+/* ===== ABOUT-US ===== */
+
+.about-us-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #EA9000;
+}
+
+/* ===== ABOUT-US-FLEXBOX-IMAGE ===== */
+
+.about-us-flex-container {
+    display: flex;
+    flex-basis: 1;
+    flex-grow:  1;
+    flex-shrink: 0px;
+    justify-content: center;
+}
+
+.about-us-flex-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    
+    box-shadow: 1px 2px 5px #1D4973;
+    margin: 10px;
+    
+}
+
+.about-us-flex-image img:hover {
+    width: 220px;
+    height: 220px;
+    transition: 1s;
+}
+
+/* ===== ABOUT-US-CONTEN ===== */
+
+.about-us-content-box {
+    
+    border-radius: 10px;
+    color: #1D4973;
+    margin-right: 12%;
+    margin-top: 10px;
+    padding: 15px;
+    transition: 2s;
+}
+
+.about-us-content-box > h3 {
+    margin-top: 0;
+}
+
+.about-us-content-box:hover {
+    box-shadow: 0 2px 5px #1D4973; 
+    background-color: #FFFF;
+}
+
+/* ===== END-ABOUT-US ===== */
+
+/* ===== CONTACT ===== */
+
+.contact-forms {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact-forms-container {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.contact-forms-container h3 {
+    color: #1D4973;
+    font-size: 25px;
+    margin: 0;
+}
+
+/* ===== CONTACT-FORMS-INPUTS ===== */
+
+.contact-forms-container div > label {
+    font-size: 18px;
+    color: #1D4973;
+}
+
+.contact-forms-container div > input[type="text"],
+.contact-forms-container div > input[type="number"],
+.contact-forms-container div > input[type="email"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0.5px solid #1D4973;
+    color: #1D4973;
+    font-size: 16px;
+    font-family: Cairo-Light, Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-forms-container div > #message[type="text"] {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 0.5px solid #1D4973;
+    color: #1D4973;
+    font-size: 16px;
+    font-family: Cairo-Light, Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-forms-container div > input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: 0.5px solid #EA9000;
+    border-radius: 10px;
+    background-color: #1D4973;
+    color:#EA9000;
+    font-size: 18px;
+    font-family: Cairo-Regular;
+    transition: 1s;
+}
+
+.contact-forms-container div > input[type="submit"]:hover {
+    background-color: #EA9000;
+    color:#1D4973;
+    border: 0.5px solid #1D4973;
+}
+
+.contact-forms-container div > input[type="text"]:focus,
+.contact-forms-container div > input[type="number"]:focus,
+.contact-forms-container div > input[type="email"]:focus {
+    box-shadow: 0 0 1px ;
+}
+
+.mandatoryField {
+    color: grey;
+    font-size: 16px;
+    font-family: Cairo-Light;
+}
