@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/776814c80d.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
     <title></title>
 </head>
 <body>
@@ -14,13 +15,26 @@
 
 <header class="header">
         <div class="navigation">
+            
             <ul class="top-nav">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#service-link">SERVICE</a></li>
                 <li><a href="#about-us-link">ABOUT US</a></li>
                 <li><a href="#contact-forms-link">CONTACT</a></li>
             </ul>
+            
+            <!-- MOBILE-NAVIGATION -->
+            <div class="mobile-nav" onklick="mobileNavMenuJs()"><i class="fas fa-bars"></i></div>
+            <div class="mobile-nav-menu" id="mobile-nav-menu-js">
+                <ul class="mobile-nav-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#service-link">SERVICE</a></li>
+                    <li><a href="#about-us-link">ABOUT US</a></li>
+                    <li><a href="#contact-forms-link">CONTACT</a></li>    
+                </ul>
+            </div>
         </div>
+
 </header>
 
 <!-- HEADER-BACKGROUND-IMAGE -->
@@ -196,12 +210,19 @@
 
         </div>
         <div class="col-6">
-            <div class="row">
-                <div class="col-2">
-                    <p></p>
+            <div class="row flex-me animation-container">
+                <div class="col-2 location-arrow">
+                    <p><i class="fas fa-chevron-left"></i></p>
                 </div>
-                <div class="col-10">
-                    <p></p>
+                <div class="col-10 location-content">
+                    <h3>Hamburg</h3>
+                    <ul>
+                        <li>CEO: Frank Otto</li>
+                        <li>Mustermanstraße 12</li>
+                        <li>22078 Hamburg</li>
+                        <li>Phone: 040 32877364</li>
+                        <li>Mail: info@aton-sol.com</li>
+                    </ul>
                 </div>
             </div>
         </div>
