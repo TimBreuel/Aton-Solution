@@ -6,3 +6,5 @@ function mobileNavMenuJs() {
         x.style.display = "block";
     }  
 }
+
+console.log('Warum gehst du nicht');

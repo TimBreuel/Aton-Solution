@@ -23,8 +23,8 @@
             </ul>
             
             <!-- MOBILE-NAVIGATION -->
-            <div class="mobile-nav" onklick="mobileNavMenuJs()"><i class="fas fa-bars"></i></div>
-            <div class="mobile-nav-menu" id="mobile-nav-menu-js">
+            <div id="mobile-nav" onklick="mobileNavMenuJs()"><i class="fas fa-bars"></i></div>
+            <div id="mobile-nav-menu-js">
                 <ul class="mobile-nav-list">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#service-link">SERVICE</a></li>
@@ -37,7 +37,7 @@
 </header>
 
 <!-- HEADER-BACKGROUND-IMAGE -->
-<section class="header-background">
+<!-- <section class="header-background">
     <div class="logo-background">
         <div class="logo-div"></div>
         <div class="logo-button">
@@ -45,7 +45,22 @@
         </div>
     </div>
 
+</section> -->
+
+<!-- ANIMATION -->
+
+<section class="header-background">
+    <div class="logo-background">
+        <div class="logo-div"></div>
+        <div class="logo-button">
+            <button class="button-1">See more!</button>
+        </div>   
+    </div>
+    <div id="wave"></div>
+        <!-- <div id="wave2"></div> -->
+
 </section>
+
 
 <!-- END-HEADER-NAVIGATION -->
 
@@ -209,21 +224,58 @@
 
         </div>
         <div class="col-6">
-            <div class="row flex-me animation-container">
-                <div class="col-2 location-arrow">
-                    <p><i class="fas fa-chevron-left"></i></p>
-                </div>
-                <div class="col-10 location-content">
-                    <h3>Hamburg</h3>
-                    <ul>
-                        <li>CEO: Frank Otto</li>
-                        <li>Mustermanstraße 12</li>
-                        <li>22078 Hamburg</li>
-                        <li>Phone: 040 32877364</li>
-                        <li>Mail: info@aton-sol.com</li>
-                    </ul>
-                </div>
-            </div>
+            
+            <h3>OTHER LOCATIONS</h3>
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Street</th>
+                    <th>Post-Code</th>
+                    <th>Mail</th>
+                </tr>
+                <tr>
+                    <td>Berlin</td>
+                    <td>Musterman Str.3</td>
+                    <td>10115</td>
+                    <td>aton-sol@berlin.com</td>
+                </tr>
+                <tr>
+                    <td>Polen</td>
+                    <td>Warszawa 23</td>
+                    <td>02-019</td>
+                    <td>aton-sol@polen.com</td>
+                </tr>
+                <tr>
+                    <td>Tokio</td>
+                    <td>Kinka Dori</td>
+                    <td>12994</td>
+                    <td>aton-sol@tokio.com</td>
+                </tr>
+                <tr>
+                    <td>Melbourn</td>
+                    <td>Cremorne</td>
+                    <td>3121</td>
+                    <td>aton-sol@melbourn.com</td>
+                </tr>
+                <tr>
+                    <td>Madrid</td>
+                    <td>Calle Laurel 23</td>
+                    <td>28005</td>
+                    <td>aton-sol@madrid.com</td>
+                </tr>
+                <tr>
+                    <td>Liverpool</td>
+                    <td>Russel St. 5</td>
+                    <td>20-143</td>
+                    <td>aton-sol@liverpool.com</td>
+                </tr>
+                <tr>
+                    <td>Brooklyn</td>
+                    <td>Church Ave</td>
+                    <td>11203</td>
+                    <td>aton-sol@brooklyn.com</td>
+                </tr>
+            </table>
         </div>
     </div>
 
