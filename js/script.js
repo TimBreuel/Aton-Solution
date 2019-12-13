@@ -28,7 +28,7 @@ function topFunction() {
 
 // Ahmad fragen /////////////////////////////////////////////////
 // Toggle möglich? //////////////////////////////////////////
-// Warum funktioniert die nur bei einem
+// Warum funktioniert die nur bei einem /////////////////////
 let removeID = document.querySelector('.removeID');
 
 removeID.onclick = function () {

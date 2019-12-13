@@ -736,7 +736,7 @@ a:hover {
     margin: 0;
 }
 
-/* ===== CONTACT-FORMS-INPUTS ===== */
+/* CONTACT-FORMS-INPUTS */
 
 .contact-forms-container div>label {
     font-size: 18px;
@@ -872,7 +872,6 @@ tr:nth-child(odd):hover {
 
 /* ===== END LOCATIONS-TABLE ===== */
 
-
 /* ===== QUESTION SECTION ===== */
 
 .questions {
@@ -925,6 +924,8 @@ tr:nth-child(odd):hover {
     display: none;
 }
 
+/* CLASS REMOVE FROM JS */
+
 .borderRadius {
     border-radius: 10px 10px 0px 0px;
 }
@@ -932,6 +933,8 @@ tr:nth-child(odd):hover {
 .borderRadiusStart {
     border-radius: 10px 10px 10px 10px;
 }
+
+/* END CLASS REMOVE FROM JS */
 
 .question {
     width: 70%;
@@ -974,9 +977,6 @@ tr:nth-child(odd):hover {
 /* ===== END QUESTION SECTION ===== */
 
 /* ===== FOOTER ===== */
-
-
-
 
 .footer {
     width: 100%;
