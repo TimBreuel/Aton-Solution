@@ -29,13 +29,18 @@ function topFunction() {
 // Ahmad fragen /////////////////////////////////////////////////
 // Toggle möglich? //////////////////////////////////////////
 // Warum funktioniert die nur bei einem /////////////////////
-let removeID = document.querySelector('.removeID');
 
-removeID.onclick = function () {
+let removeID = document.querySelectorAll('.removeID');
+
+removeID.forEach(element=>{
+element.onclick = function () {
   const removeFunction = document.querySelector('.removeID');
-  if (removeFunction.classList.contains('borderRadiusStart')) {
-    removeFunction.classList.remove('borderRadiusStart');
+  if (this.classList.contains('borderRadiusStart')) {
+    this.classList.remove('borderRadiusStart');
   } else {
-    removeFunction.classList.add('borderRadiusStart');
+    this.classList.add('borderRadiusStart');
   };
 }
+})
+
+
