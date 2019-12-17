@@ -1,6 +1,6 @@
 /* ===== GENERALS ===== */
 
-/*  COLOR: 
+/*  COLOR:
     blue: #1D4973
     orange: #EA9000
     light-grey: #FAFAFA
@@ -304,7 +304,7 @@ a:hover {
     padding-bottom: 2%;
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 10%;
-    
+
 }
 
 .logo-div {
@@ -972,6 +972,26 @@ tr:nth-child(odd):hover {
 .question-col {
     margin-bottom: 80px;
 }
+
+/* QUESTION MEDIAQUERY */
+
+@media only screen and (max-width: 1024px) {
+    .question>p {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .question>p {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+}
+
+
+/* END QUESTION MEDIAQUERY */
 
 
 /* ===== END QUESTION SECTION ===== */
