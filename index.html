@@ -16,48 +16,38 @@
 <header class="header">
         <div class="navigation">
             
-            <ul class="top-nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#service-link">SERVICE</a></li>
-                <li><a href="#about-us-link">ABOUT US</a></li>
-                <li><a href="#contact-forms-link">CONTACT</a></li>
-                <li><a href="#questionsNav">FAQs</a></li>
+            <ul class="navigation__top-nav">
+                <li class="navigation__item"><a class="navigation__link" href="#">HOME</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#service-link">SERVICE</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#about-us-link">ABOUT US</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contact-forms-link">CONTACT</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#questionsNav">FAQs</a></li>
             </ul>
             
             <!-- MOBILE-NAVIGATION -->
-            <div id="mobile-nav" onclick="mobileNavMenuJs()"><i class="fas fa-bars"></i></div>
-            <div id="mobile-nav-menu-js">
-                <ul class="mobile-nav-list">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#service-link">SERVICE</a></li>
-                    <li><a href="#about-us-link">ABOUT US</a></li>
-                    <li><a href="#contact-forms-link">CONTACT</a></li>
-                    <li><a href="#questionsNav">FAQs</a></li>    
+            <div class="mobile-nav" onclick="mobileNavMenuJs()"><i class="fas fa-bars mobile-nav__icon"></i></div>
+            <div class="mobile-nav__menu-js">
+                <ul class="mobile-nav__list">
+                    <li><a href="#" class="mobile-nav__link--hover">HOME</a></li>
+                    <li><a href="#service-link" class="mobile-nav__link--hover">SERVICE</a></li>
+                    <li><a href="#about-us-link" class="mobile-nav__link--hover">ABOUT US</a></li>
+                    <li><a href="#contact-forms-link" class="mobile-nav__link--hover">CONTACT</a></li>
+                    <li><a href="#questionsNav" class="mobile-nav__link--hover">FAQs</a></li>    
                 </ul>
             </div>
         </div>
 
 </header>
 
-<!-- HEADER-BACKGROUND-IMAGE -->
-<!-- <section class="header-background">
-    <div class="logo-background">
-        <div class="logo-div"></div>
-        <div class="logo-button">
-            <button class="button-1">See more!</button>
-        </div>
-    </div>
-
-</section> -->
 
 <!-- ANIMATION -->
 
-<section class="header-background">
+<section >
         <div id="wave"></div>
-    <div class="logo-background">
-        <div class="logo-div"></div>
-        <div class="logo-button">
-                <a href="#service-link"><button class="button-1">See more</button></a>
+    <div class="header__logo">
+        <div class="header__div"></div>
+        <div class="header__button">
+                <a href="#service-link"><button class="header__button1 header__button1--hover">See more</button></a>
             
         </div>   
     </div>
@@ -70,11 +60,11 @@
 
 <!-- SERVICE -->
 
-<section class="service-container" id="service-link">
+<section class="service" id="service-link">
     <div class="row">
         <div class="col-12">
-            <h1 class="service-h1" id="test-js">SERVICES</h1>
-            <p class="service-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, id nihil suscipit, fuga cupiditate repellat illum temporibus vitae consequatur saepe aliquid, fugit distinctio consequuntur non ea atque. Laboriosam, provident hic!
+            <h1 class="service__headline1" id="test-js">SERVICES</h1>
+            <p class="service__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, id nihil suscipit, fuga cupiditate repellat illum temporibus vitae consequatur saepe aliquid, fugit distinctio consequuntur non ea atque. Laboriosam, provident hic!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
         </div>
@@ -84,10 +74,10 @@
 
     <div class="row">
         <div class="col-4">
-            <div class="service-box">
-                <div title="Icon from a satellite" class="service-icon"><i class="fas fa-satellite"></i></div>
-                <h2 class="service-h2">WORLDWIDE</h2>
-                <ul class="service-bullet-points">
+            <div class="service__box">
+                <div title="Icon from a satellite" class="service__icon service__icon--hover"><i class="fas fa-satellite"></i></div>
+                <h2 class="service__headline2">WORLDWIDE</h2>
+                <ul class="service__bullet-points">
                     <li>International</li>
                     <li>Global Reach</li>
                     <li>Secure Network</li>
@@ -97,10 +87,10 @@
             </div>
         </div>
         <div class="col-4">
-                <div class="service-box">
-                        <div class="service-icon"><i class="fas fa-server"></i></div>
-                        <h2 class="service-h2">OUR SERVERS</h2>
-                        <ul class="service-bullet-points">
+                <div class="service__box">
+                        <div class="service__icon service__icon--hover"><i class="fas fa-server"></i></div>
+                        <h2 class="service__headline2">OUR SERVERS</h2>
+                        <ul class="service__bullet-points">
                             <li>Reliable Connection</li>
                             <li>Continual Backups</li>
                             <li>Modern Infrastructure</li>
@@ -110,10 +100,10 @@
                 </div>
         </div>
         <div class="col-4">
-                <div class="service-box">
-                        <div class="service-icon"><i class="fas fa-headset"></i></div>
-                        <h2 class="service-h2">24HRS SERVICE</h2>
-                        <ul class="service-bullet-points">
+                <div class="service__box">
+                        <div class="service__icon service__icon--hover"><i class="fas fa-headset"></i></div>
+                        <h2 class="service__headline2">24HRS SERVICE</h2>
+                        <ul class="service__bullet-points">
                             <li>Team of Experts</li>
                             <li>Friendly</li>
                             <li>Immediate Response</li>
@@ -127,7 +117,7 @@
 </section>
 
 <!-- ABOUT-US -->
-<section class="about-us-container" id="about-us-link">
+<section class="about" id="about-us-link">
     </div>
     <div class="row">
         <div class="col-6">
@@ -136,12 +126,12 @@
             <div class="row">
                 <div class="col-6 no-override">
                         <!-- <div class="about-us-flex-image"> -->
-                            <img class="company-img company-img-1" src="./img/company_1.jpg" alt="Image error" title="Office Image">
+                            <img class="about__img about__img--1" src="./img/company_1.jpg" alt="Image error" title="Office Image">
                         <!-- </div> -->
                 </div>
                 <div class="col-6 no-override">
                     <!-- <div class="about-us-flex-image"> -->
-                        <img class="company-img company-img-2" src="./img/company_2.jpg" alt="Image error" title="Office Image">
+                        <img class="about__img about__img--2" src="./img/company_2.jpg" alt="Image error" title="Office Image">
                     <!-- </div> -->
                 </div>
             </div>
@@ -149,19 +139,19 @@
             <div class="row">
                 <div class="col-6 no-override">
                     <!-- <div class="about-us-flex-image"> -->
-                        <img class="company-img company-img-3" src="./img/company_3.jpg" alt="Image error" title="Office Image">
+                        <img class="about__img about__img--3" src="./img/company_3.jpg" alt="Image error" title="Office Image">
                     <!-- </div> -->
                 </div>
                 <div class="col-6 no-override">
                     <!-- <div class="about-us-flex-image"> -->
-                        <img class="company-img company-img-4" src="./img/company_4.jpg" alt="Image error" title="Office Image">
+                        <img class="about__img about__img--4" src="./img/company_4.jpg" alt="Image error" title="Office Image">
                     <!-- </div> -->
                 </div>
             </div>
         </div>
             
                     <div class="col-6">
-                        <div class="about-us-content-box">
+                        <div class="about__box about__box--hover">
                             <h3> ABOUT OUR COMPANY</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia velit laborum veniam soluta neque nobis sit suscipit quo, ad provident dolorum doloribus possimus totam perspiciatis similique ullam earum sequi.
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur fugit, unde dolorem eum, enim tempore, adipisci in nesciunt esse consequatur pariatur incidunt quo sed quod quam doloremque nostrum reiciendis ad!
@@ -178,37 +168,37 @@
 <!-- END ABOUT-US -->
 
 <!-- CONTACT-US -->
-<section class="contact-forms" id="contact-forms-link">
+<section class="contact" id="contact-forms-link">
 
     <div class="row">
 
         <div class="col-6">
-            <div class="contact-forms-container">
+            <div class="contact__container">
 
-                <h3>CONTACT US</h3>
+                <h3 class="contact__header">CONTACT US</h3>
 
                 <div>
-                <label for="first-name">*First Name:</label>
-                <input type="text" id="first-name" placeholder="First-Name">
+                <label for="first-name" class="contact__label">*First Name:</label>
+                <input class="contact__input contact__input--focus" type="text" id="first-name" placeholder="First-Name">
                 </div>
 
                 <div>
-                <label for="last-name">*Last Name:</label>
-                <input type="text" id="last-name" placeholder="Last Name">   
+                <label for="last-name" class="contact__label">*Last Name:</label>
+                <input class="contact__input contact__input--focus" type="text" id="last-name" placeholder="Last Name">   
                 </div>
 
                 <div>
-                    <label for="phone">Phone:</label>
-                    <input type="number" id="phone" placeholder="Phone">
+                    <label for="phone" class="contact__label">Phone:</label>
+                    <input class="contact__input contact__input--focus" type="number" id="phone" placeholder="Phone">
                 </div>
 
                 <div>
-                    <label for="e-mail">*Email:</label>
-                    <input type="email" id="e-mail" placeholder="Email">
+                    <label for="e-mail" class="contact__label">*Email:</label>
+                    <input class="contact__input contact__input--focus" type="email" id="e-mail" placeholder="Email">
                 </div>
                 <div>
-                    <label for="message">*Your Message:</label>
-                    <input type="text" id="message" placeholder="Your Message">
+                    <label for="message" class="contact__label">*Your Message:</label>
+                    <input class="contact__message contact__input--focus" type="text" id="message" placeholder="Your Message">
                 </div>
                 <div>
                     <input type="checkbox" id="checkboxAGB">
@@ -222,7 +212,7 @@
                     <span class="mandatoryField">*Mandatory field</span>
                 </div>
                 <div>
-                    <input type="submit" class="buttom-margin" value="Send">
+                    <input type="submit" class="contact__submit contact__submit--hover  buttom-margin" value="Send">
                 </div>
 
             </div>
@@ -230,8 +220,8 @@
         </div>
         <div class="col-6">
             
-            <div class="table-container">
-            <h3 class="table-h3">OTHER LOCATIONS</h3>
+            <div class="table">
+            <h3 class="table__headline">OTHER LOCATIONS</h3>
             <table>
                 <tr>
                     <th>City</th>
@@ -306,7 +296,7 @@
 <section class="questions" id="questionsNav">
     <div class="row">
         <div class="col-12">
-            <h2>FAQs</h2>
+            <h2 class="questions__headline">FAQs</h2>
         </div>
     </div>
     <div class="row">
@@ -352,7 +342,7 @@
 
         <div class="col-12">
             <div class="line"></div>
-            <p>Made by Tim Breuel © 2019</p>
+            <p class="footer__paragraph">Made by Tim Breuel © 2019</p>
         </div>
     </div>
 
@@ -361,5 +351,5 @@
 <script src="./js/script.js"></script>
 </body>
 <!-- SCROLL BUTTON -->
-<div onclick="topFunction()" id="myBtn" title="Go to top"><img src="./img/chevron-up-solid.svg" alt="Arrow"></div>
+<div onclick="topFunction()" class="myBtn" title="Go to top"><img class="myBtn__img" src="./img/chevron-up-solid.svg" alt="Arrow"></div>
 </html>

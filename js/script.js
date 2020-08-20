@@ -1,5 +1,5 @@
 function mobileNavMenuJs() {
-  let x = document.getElementById('mobile-nav-menu-js');
+  let x = document.getElementById("mobile-nav-menu-js");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -7,17 +7,16 @@ function mobileNavMenuJs() {
   }
 }
 
-let myButton = document.getElementById('myBtn');
-
 window.onscroll = function () {
-  scrollFunction()
+  scrollFunction();
 };
 
 function scrollFunction() {
+  let myButton = document.querySelector(".myBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    myButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    myButton.style.display = "none";
   }
 }
 
@@ -26,21 +25,15 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Ahmad fragen /////////////////////////////////////////////////
-// Toggle möglich? //////////////////////////////////////////
-// Warum funktioniert die nur bei einem /////////////////////
+let removeID = document.querySelectorAll(".removeID");
 
-let removeID = document.querySelectorAll('.removeID');
-
-removeID.forEach(element=>{
-element.onclick = function () {
-  const removeFunction = document.querySelector('.removeID');
-  if (this.classList.contains('borderRadiusStart')) {
-    this.classList.remove('borderRadiusStart');
-  } else {
-    this.classList.add('borderRadiusStart');
+removeID.forEach((element) => {
+  element.onclick = function () {
+    const removeFunction = document.querySelector(".removeID");
+    if (this.classList.contains("borderRadiusStart")) {
+      this.classList.remove("borderRadiusStart");
+    } else {
+      this.classList.add("borderRadiusStart");
+    }
   };
-}
-})
-
-
+});

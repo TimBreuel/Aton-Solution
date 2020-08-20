@@ -1,0 +1,98 @@
+/* ===== GENERALS ===== */
+
+/*  COLOR:
+    blue: #1D4973
+    orange: #EA9000
+    light-grey: #FAFAFA
+    light-grey: #F5F5F5
+*/
+
+@font-face {
+  font-family: "Cairo-Regular";
+  src: url("../font/Cairo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cairo-Bold";
+  src: url("../font/Cairo-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cairo-Light";
+  src: url("../font/Cairo-Light.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== HTML ELEMENTS ===== */
+
+body {
+  margin: 0;
+  font-family: "Cairo-Regular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cairo-Bold", sans-serif;
+}
+
+/* ===== END HTML ELEMENTS ===== */
+
+/* ===== LINK STYLES ===== */
+
+table {
+  text-align: left;
+  border: 1px solid #1d4973;
+  border-radius: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  height: 50px;
+}
+
+tr:hover {
+  background-color: #ea9000;
+}
+
+th {
+  font-size: 18px;
+}
+
+th,
+td {
+  padding: 0 10px;
+  color: #1d4973;
+  border: 1px solid #1d4973;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(238, 238, 238);
+}
+
+tr:nth-child(odd):hover {
+  background-color: #ea9000;
+}
+
+@media only screen and (max-width: 500px) {
+  th,
+  td {
+    padding: 0 0 0 5px;
+    font-size: 12px;
+  }
+
+  tr {
+    height: auto;
+  }
+}
