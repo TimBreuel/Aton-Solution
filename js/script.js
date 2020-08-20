@@ -1,5 +1,5 @@
 function mobileNavMenuJs() {
-  let x = document.getElementById("mobile-nav-menu-js");
+  let x = document.querySelector(".mobile-nav__menu-js");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
